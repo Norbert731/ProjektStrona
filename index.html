@@ -6,30 +6,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Przykładowa strona oparta na zajęcia z języków internetowych" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    
 </head>
 <body>
     <nav>
         <div class="container">
-            <div class="wrapper">
+            <div class="wrapper navbar">
                 <div id="logo">
-                    VISION
+                    <a href="index.html">VISION</a>
                 </div>
 
                 <div>
                     <ul class="wrapper">
-                        <li>Home</li>
-                        <li>Services</li>
-                        <li>About</li>
-                        <li>Projects</li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Projects</a></li>
                     </ul>
                 </div>
-
-                <div>
-                    Contact
-                </div>
+                <a href="#">
+                    <div class="main-btn">
+                        Contact
+                    </div>
+                </a>
             </div>
         </div>
     </nav>
+
+    <main >
+        <section class="hero">
+           <div class="hero__wrapper ">
+                <div class="hero_label">
+                    <div class="hero__title">
+                        <h1>Be a<br> Visionary</h1>
+                    </div>
+                    <div class="hero__desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem odio doloribus placeat accusantium ab fugiat at veritatis eligendi, ipsam quam.
+                    </div>
+                    <a href="#">
+                        <div  class="main-btn">
+                            EXPLORE MORE
+                        </div>
+                    </a>
+                </div>
+
+                <div class="hero__img">
+                    <img src="https://images.pexels.com/photos/7603553/pexels-photo-7603553.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="człowiek spadający w dół">
+                </div>
+           </div>
+        </section>
+
+        <section class="offer container">
+            <div class="offer__wrapper">
+                <div class="offer__title">
+                    <p class="title">What we offer?</p>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolore ipsum velit numquam expedita eum ullam voluptatibus? Maxime optio ipsam ratione? Iure, repellat! Dolor iure totam ut soluta, dolorum architecto consequuntur ex tempora quae provident quidem consectetur voluptatibus, nisi aspernatur.</p>
+                </div>
+                <div class="offer__blocks">
+                    <div class="offer__block">
+                        <img src="/img/landing-page.png" alt="ikona">
+                        <h3>Effective marketing</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolores optio minima fugiat iure rem modi ipsum molestias architecto ullam.</p>
+                        <a href="#">View Details</a>
+                    </div>
+                    <div class="offer__block">
+                        <img src="/img/user.png" alt="ikona">
+                        <h3>Personal marketing</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolores optio minima fugiat iure rem modi ipsum molestias architecto ullam.</p>
+                        <a href="#">View Details</a>
+                    </div>
+                    <div class="offer__block">
+                        <img src="/img/open-book.png" alt="ikona">
+                        <h3>Knowledge of marketing</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolores optio minima fugiat iure rem modi ipsum molestias architecto ullam.</p>
+                        <a href="#">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="support container">
+            <div class="support">
+                <p class="title">We support</p>
+                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quas! Natus alias omnis voluptate inventore aut cum. In iste dolor similique molestias explicabo qui quidem saepe, quis repellendus vero quam, eaque rerum consequatur laboriosam? Similique pariatur est sequi a incidunt?</p>
+                <div class="support__wrapper">
+                    <div class="support__label">
+                        <img src="img/team.png" alt="icon">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolore quam suscipit laudantium aperiam molestiae impedit incidunt porro commodi. Dolores similique laboriosam unde iusto sunt officiis facere nam numquam modi.</p>
+                    </div>
+                    <div class="support__label">
+                        <img src="img/united.png" alt="icon">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolore quam suscipit laudantium aperiam molestiae impedit incidunt porro commodi. Dolores similique laboriosam unde iusto sunt officiis facere nam numquam modi.</p>
+                    </div>
+                    <div class="support__label">
+                        <img src="img/office-building.png" alt="icon">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolore quam suscipit laudantium aperiam molestiae impedit incidunt porro commodi. Dolores similique laboriosam unde iusto sunt officiis facere nam numquam modi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+    </main>
+
+    <footer>
+        
+            <div class="footer__wrapper container">
+                <div>
+                    <img src="/img/view2.png" alt="eye">
+                </div>
+                <div class="footer__col">
+                    <ul >
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Projects</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__col footer_policy">
+                    <ul>
+                        <li><a href="policy.html">Policy</a></li>
+                        <li><a href="cookies.html">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+        
+    </footer>
+   
+    
 </body>
 </html>

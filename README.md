@@ -1,3 +1,2 @@
-Hi
-
-Just project on labs nothing special
+lang = [PL]
+Dokumentacja
