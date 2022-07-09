@@ -354,6 +354,41 @@ tr:hover {
   align-items: center;
 }
 
+.contact {
+  display: flex;
+  gap: 50px;
+  background-image: url("https://images.unsplash.com/photo-1520923642038-b4259acecbd7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1119&q=80git");
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  background-position: center;
+  color: #fff;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.contact .contact__opa {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 80px 100px;
+  margin-bottom: 100px;
+}
+
+.contact h2 {
+  font-size: 42px;
+  margin: 30px 0;
+  font-weight: 900;
+}
+.contact p {
+  font-size: 16px;
+  max-width: 300px;
+}
+
+.contact .con_link {
+  text-decoration: none;
+  color: #fff;
+}
+
 @media (max-width: 800px) {
   nav {
     position: fixed;
@@ -454,5 +489,16 @@ tr:hover {
     display: flex !important;
     flex-direction: column;
     height: auto !important;
+  }
+  .contact__opa,
+  .contact {
+    max-width: 100%;
+    padding: 0;
+  }
+  .contact .title {
+    font-size: 24px;
+  }
+  .contact__opa {
+    margin-bottom: 0 !important;
   }
 }
