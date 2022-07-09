@@ -4,7 +4,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  transition: 0.3s;
 }
 
 body {
@@ -30,10 +29,12 @@ img {
   margin: 10px 100px;
 }
 
-.wrapper {
+.navbar {
+  min-height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 24px;
 }
 
 a {
@@ -53,6 +54,7 @@ a {
   font-size: 16px;
   padding: 10px 15px;
   display: inline;
+  transition: 0.3s;
 }
 
 .title {
@@ -66,6 +68,7 @@ a {
   text-align: center;
   padding: 30px 0;
   margin: 0 auto;
+  font-weight: 400;
 }
 
 .main-btn:hover {
@@ -134,6 +137,7 @@ li:hover {
   box-shadow: 5px 10px 10px #000;
   max-width: 300px;
   padding: 20px;
+  transition: 0.3s;
 }
 
 .offer__block:hover {
@@ -207,4 +211,248 @@ footer {
 .policy p,
 .policy h2 {
   margin: 30px 0;
+}
+
+.about {
+  display: flex;
+  gap: 40px;
+  margin: 50px 0;
+}
+
+.about__text {
+  max-width: 50%;
+}
+.about--width {
+  margin: 50px 0;
+}
+
+.about--width p {
+  margin: 15px 0;
+}
+
+.about__text p {
+  margin: 15px 0;
+}
+
+.services__hero {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.services__hero img {
+  border-bottom: 10px #000 solid;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.serivces__title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+  margin: 50px 0;
+}
+.serivces__text p {
+  margin: 15px 0;
+}
+
+.services__table {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.services__table p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 50px 0;
+}
+
+table {
+  background-color: #f0f8ff;
+  border: 1px solid #000;
+  min-width: 900px;
+}
+th {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #000;
+}
+
+td {
+  border: 1px solid #000;
+  padding-left: 20px;
+}
+tr:nth-child(even) {
+  background-color: #fff;
+}
+
+tr:hover {
+  background-color: #000;
+  color: #fff;
+  transition: 0ms;
+}
+
+.glide__slide img {
+  max-width: 900px;
+  max-height: 350px;
+}
+
+.projects__title {
+  font-size: 32px;
+  font-weight: 900;
+  margin: 50px 0;
+  text-align: center;
+}
+
+.projects__content {
+  margin-bottom: 100px;
+}
+
+.projects__content .parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 1400px;
+}
+.projects__content img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 3 / 3;
+}
+.div2 {
+  grid-area: 1 / 3 / 4 / 6;
+}
+.div3 {
+  grid-area: 3 / 1 / 6 / 3;
+}
+.div4 {
+  grid-area: 4 / 3 / 6 / 6;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #000;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #fff;
+    z-index: 9999;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+}
+
+@media (max-width: 1175px) {
+  .hero__wrapper {
+    flex-direction: column;
+  }
+  .hero__img {
+    margin: 40px auto;
+    max-width: 400px;
+  }
+  .hero__title,
+  .hero__desc {
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero__title {
+    font-size: 30px;
+    line-height: 42px;
+  }
+  .hero__desc {
+    margin: 20px 0;
+    margin-bottom: 40px;
+  }
+  .main-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .support__label {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+  }
+  .container {
+    margin: 10px 20px;
+  }
+  .navbar ul {
+    padding: 0;
+  }
+  .about {
+    flex-direction: column;
+    margin: 95px 0;
+  }
+  .about__text {
+    min-width: 100%;
+  }
+  .services,
+  .contact {
+    margin: 95px 0;
+  }
+  .glide__slide img {
+    max-height: 180px;
+  }
+  .parent {
+    display: flex !important;
+    flex-direction: column;
+    height: auto !important;
+  }
 }
